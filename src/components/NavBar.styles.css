@@ -10,3 +10,13 @@ ul {
     flex-direction: row;
     gap: 30px;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline aqua;
+}
