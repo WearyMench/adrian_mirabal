@@ -2,9 +2,8 @@ import { Global } from "./App.styles";
 
 import Squares from "./components/Squares";
 import NavBar from "./components/NavBar";
-import Socials from "./components/Socials";
 
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom  ";
+import { BrowserRouter, Route, Routes } from "react-router-dom  ";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -19,13 +18,12 @@ function App() {
       <Squares />
       <NavBar />
       <Routes>
-        <Route path="/portfolio/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/adrian_mirabal/" element={<Home />} />
+        <Route path="/adrian_mirabal/about" element={<About />} />
+        <Route path="/adrian_mirabal/works" element={<Works />} />
+        <Route path="/adrian_mirabal/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Socials />
     </BrowserRouter>
   );
 }

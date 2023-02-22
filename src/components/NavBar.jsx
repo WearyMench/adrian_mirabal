@@ -6,16 +6,16 @@ function NavBar() {
     <div className="nav">
       <ul>
         <li>
-          <NavLink to="/portfolio/">Home</NavLink>
+          <NavLink to="/adrian_mirabal/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/adrian_mirabal/about">About</NavLink>
         </li>
         <li>
-          <NavLink to="/works">Works</NavLink>
+          <NavLink to="/adrian_mirabal/works">Works</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/adrian_mirabal/contact">Contact</NavLink>
         </li>
       </ul>
     </div>
