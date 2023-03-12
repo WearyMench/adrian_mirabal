@@ -18,5 +18,5 @@ a {
 }
 
 a:hover {
-    text-decoration: underline aqua;
+    text-decoration: underline #00b2df;
 }

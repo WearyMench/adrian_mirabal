@@ -1,27 +1,17 @@
 import styled, { createGlobalStyle } from "styled-components";
+import pattern from "./assets/y-so-serious.png";
 
 export const Global = createGlobalStyle`
   body{
     margin: 0;
-    place-items: center;
     min-width: 320px;
     min-height: 100vh;
     display: flex;
-    background-color: black;
+    flex-direction: column;
+    background-image: url(${pattern});
     color: white;
-    text-align: center;
-    justify-content: center;
     font-family: 'Playfair Display', serif;
   }
-`;
-
-export const Title = styled.h1`
-  font-size: 40px;
-  color: white;
-`;
-
-export const Span = styled.span`
-  display: block;
 `;
 
 export const LogoWrapper = styled.div`
@@ -30,7 +20,7 @@ export const LogoWrapper = styled.div`
   bottom: 20px;
 `;
 
-export const Image = styled.img`
+export const Logo = styled.img`
   width: 30px;
   margin: 10px;
   filter: invert(1);

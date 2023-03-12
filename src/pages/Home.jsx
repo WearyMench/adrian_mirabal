@@ -1,18 +1,43 @@
 import React from "react";
-import { Title, Span } from "../App.styles";
+import {
+  Title,
+  Span,
+  HomeWrapper,
+  Image,
+  Blob,
+  AboutWrapper,
+} from "./Home.styles";
+
 import Socials from "../components/Socials";
+import About from "../components/About";
+import Skills from "../components/Skills";
+
+import devBack from "../assets/devBack.png";
+import blob from "../assets/Blob.png";
 
 function Home() {
   return (
-    <div>
-      <Title>
-        <Span>Hi!</Span>
-        My name is
-        <Span>Adrian Mirabal</Span>
-      </Title>
-      <p>I'm a Front End Developer</p>
+    <>
+      <HomeWrapper>
+        <div>
+          <Title>
+            Hi! <br />
+            My name is
+            <Span>Adrian Mirabal</Span>
+          </Title>
+          <p>I'm a Front End Developer</p>
+        </div>
+        <div>
+          <Blob src={blob} alt="Blob" />
+          <Image src={devBack} alt="Imagen Principal" />
+        </div>
+      </HomeWrapper>
       <Socials />
-    </div>
+      <AboutWrapper>
+        <About />
+      </AboutWrapper>
+      <Skills />
+    </>
   );
 }
 
