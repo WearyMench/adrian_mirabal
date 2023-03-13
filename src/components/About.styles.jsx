@@ -14,4 +14,5 @@ export const Presentation = styled.div`
 
 export const MyPhoto = styled.img`
   width: 400px;
+  border-radius: 5px;
 `;

@@ -19,4 +19,9 @@ export const Card = styled.div`
   display: flex;
   gap: 20px;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 3px white;
+  }
 `;

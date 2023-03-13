@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "./Contact.styles";
 
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <Container>
+      <h1>🐂🚜 Under Construction 👦🔧🚜</h1>
+    </Container>
+  );
 }
 
 export default Contact;

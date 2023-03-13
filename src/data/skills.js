@@ -31,7 +31,7 @@ export const Skills = [
     id: 5,
     title: "Javascript",
     imagen:
-      "https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
   },
   {
     id: 6,
@@ -69,14 +69,12 @@ export const Skills = [
   {
     id: 12,
     title: "Zustand",
-    imagen:
-      "https://repository-images.githubusercontent.com/180328715/fca49300-e7f1-11ea-9f51-cfd949b31560",
+    imagen: "https://tsh.io/wp-content/uploads/2023/02/zustand-logo.png",
   },
   {
     id: 13,
     title: "C#",
-    imagen:
-      "https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png",
+    imagen: "https://cdn.cdnlogo.com/logos/c/27/c.svg",
   },
   {
     id: 14,
