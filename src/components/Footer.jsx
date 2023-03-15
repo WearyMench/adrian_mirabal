@@ -12,7 +12,7 @@ function Footer() {
       </Text>
       <ArrowCont>
         <Arrow href="#nav">
-          <span class="material-symbols-outlined">arrow_upward</span>
+          <span className="material-symbols-outlined">arrow_upward</span>
         </Arrow>
       </ArrowCont>
     </Wrapper>

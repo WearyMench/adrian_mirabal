@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LogoWrapper, Logo } from "../App.styles";
+import { LogoWrapper, Logo } from "./Socials.styles";
 import LogoGitHub from "../assets/github.png";
 import LogoLinkdIn from "../assets/linkdin.png";
 import LogoCorreo from "../assets/correo.png";

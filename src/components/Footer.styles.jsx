@@ -9,6 +9,15 @@ export const Wrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "empty text arrow";
   align-items: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:hover {
+    text-decoration: underline #00b2df;
+  }
 `;
 
 export const Text = styled.p`

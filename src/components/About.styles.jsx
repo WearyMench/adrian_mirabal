@@ -15,4 +15,8 @@ export const Presentation = styled.div`
 export const MyPhoto = styled.img`
   width: 400px;
   border-radius: 5px;
+
+  @media (max-width: 700px) {
+    width: 150px;
+  }
 `;

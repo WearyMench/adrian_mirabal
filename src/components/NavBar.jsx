@@ -1,27 +1,81 @@
-import "./NavBar.styles.css";
-import { NavLink } from "react-router-dom";
+import {
+  NavbarNavLink,
+  NavbarA,
+  Navi,
+  ButtonNv,
+  ExtendedNavbarA,
+  ExtendedNavbarNavLink,
+  NavBarUL,
+  ExtendedNavBarUL,
+} from "./NavBar.styles";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function NavBar() {
+  const [extendNavbar, setExtendNavbar] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setExtendNavbar(false);
+  }, [location]);
+
   return (
-    <div className="nav" id="nav">
-      <ul>
+    <Navi id="nav" extend={extendNavbar}>
+      <NavBarUL>
         <li>
-          <NavLink to="/adrian_mirabal/">Home</NavLink>
+          <NavbarNavLink to="/adrian_mirabal/">Home</NavbarNavLink>
         </li>
         <li>
-          <a href="/adrian_mirabal/#about">About</a>
+          <NavbarA href="/adrian_mirabal/#about">About</NavbarA>
         </li>
         <li>
-          <a href="/adrian_mirabal/#skills">Skills</a>
+          <NavbarA href="/adrian_mirabal/#skills">Skills</NavbarA>
         </li>
         <li>
-          <NavLink to="/adrian_mirabal/works">Works</NavLink>
+          <NavbarNavLink to="/adrian_mirabal/works">Works</NavbarNavLink>
         </li>
         <li>
-          <NavLink to="/adrian_mirabal/contact">Contact</NavLink>
+          <NavbarNavLink to="/adrian_mirabal/contact">Contact</NavbarNavLink>
         </li>
-      </ul>
-    </div>
+        <ButtonNv
+          onClick={() => {
+            setExtendNavbar((curr) => !curr);
+          }}
+        >
+          {extendNavbar ? <>&#10005;</> : <>&#8801;</>}
+        </ButtonNv>
+      </NavBarUL>
+      {extendNavbar && (
+        <ExtendedNavBarUL>
+          <li>
+            <ExtendedNavbarNavLink to="/adrian_mirabal/">
+              Home
+            </ExtendedNavbarNavLink>
+          </li>
+          <li>
+            <ExtendedNavbarA href="/adrian_mirabal/#about">
+              About
+            </ExtendedNavbarA>
+          </li>
+          <li>
+            <ExtendedNavbarA href="/adrian_mirabal/#skills">
+              Skills
+            </ExtendedNavbarA>
+          </li>
+          <li>
+            <ExtendedNavbarNavLink to="/adrian_mirabal/works">
+              Works
+            </ExtendedNavbarNavLink>
+          </li>
+          <li>
+            <ExtendedNavbarNavLink to="/adrian_mirabal/contact">
+              Contact
+            </ExtendedNavbarNavLink>
+          </li>
+        </ExtendedNavBarUL>
+      )}
+    </Navi>
   );
 }
 

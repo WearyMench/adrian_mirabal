@@ -8,6 +8,13 @@ export const HomeWrapper = styled.div`
   gap: 200px;
   margin-top: 12%;
   margin-bottom: 230px;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 60px;
+    height: 80vh;
+    margin-bottom: 0px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -34,6 +41,10 @@ const rotate = keyframes`
 export const Image = styled.img`
   width: 450px;
   border-radius: 30%;
+
+  @media (max-width: 700px) {
+    width: 200px;
+  }
 `;
 
 export const Blob = styled.img`
@@ -42,6 +53,11 @@ export const Blob = styled.img`
   position: absolute;
   top: 140px;
   z-index: -1;
+
+  @media (max-width: 700px) {
+    width: 200px;
+    margin-top: 75%;
+  }
 `;
 
 export const AboutWrapper = styled.div`
@@ -49,4 +65,9 @@ export const AboutWrapper = styled.div`
   padding-top: 50px;
   padding-bottom: 130px;
   background-color: #3d3c3cc2;
+
+  @media (max-width: 700px) {
+    padding-top: 25px;
+    padding-bottom: 60px;
+  }
 `;
